@@ -1,5 +1,5 @@
-ARG ruby_version=latest
-FROM ruby:$ruby_version
+ARG RUBY_VERSION
+FROM ruby:$RUBY_VERSION
 
 # node
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - && \
