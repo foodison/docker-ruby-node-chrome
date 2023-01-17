@@ -5,7 +5,7 @@ ENV LANG C.UTF-8
 ENV TZ /usr/share/zoneinfo/Asia/Tokyo
 
 # node
-RUN curl -sL https://deb.nodesource.com/setup_18.x | bash - && \
+RUN curl -sL https://deb.nodesource.com/setup_16.x | bash - && \
     apt-get install -y --no-install-recommends nodejs && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
